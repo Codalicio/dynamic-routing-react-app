@@ -8,7 +8,7 @@ const Home = ({ user, setUser }) => {
     setUser("");
   };
 
-  const emptyUser = () => {
+  const makeUserEmpty = () => {
     setUser("");
   };
   return (
@@ -36,7 +36,7 @@ const Home = ({ user, setUser }) => {
       </a>
       <Link
         to={`/${user}`}
-        onClick={emptyUser}
+        onClick={makeUserEmpty}
         className="bg-green-600 text-white p-2 ml-5 mx-7 rounded border-none cursor-pointer text-center max-sm:w-[80%] max-sm:ml-7"
       >
         via Link tag
